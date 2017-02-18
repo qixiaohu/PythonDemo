@@ -5,6 +5,7 @@
 def doc_func(func):
     #包裹函数[闭包，额外需要添加的功能全部在此函数中添加]
     def warpfunc():
+        #做一些额外的功能
         print "%s called" %(func.__name__)
         #生调一下被装饰的函数
         func()
